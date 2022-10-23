@@ -24,4 +24,10 @@ public class FakerestapiController {
         return new ResponseEntity(data, HttpStatus.OK);
     }
 
+
+    @GetMapping(value = RestApi.HOME)
+    public String home() {
+        return "Home page";
+    }
+
 }
